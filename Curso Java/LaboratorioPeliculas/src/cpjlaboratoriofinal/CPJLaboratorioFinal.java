@@ -1,15 +1,16 @@
 package cpjlaboratoriofinal;
+
 import java.util.Scanner;
-import mx.com.gm.peliculas.negocio.CatalogoPeliculasImp;
+import mx.com.gm.peliculas.negocio.*;
 
 public class CPJLaboratorioFinal {
+
     public static void main(String[] args) {
         int opcion;
-        String nombreArchivo;
         Scanner sc = new Scanner(System.in);
-        CatalogoPeliculasImp catalogoPeliculas; 
-        
-        while(true){
+        ICatalogoPeliculas catalogo = new CatalogoPeliculasImp();
+
+        while (true) {
             System.out.println("Elige una opcion:"
                     + "\n1.-Iniciar catalogo de peliculas."
                     + "\n2.-Agregar pelicula."
@@ -17,16 +18,29 @@ public class CPJLaboratorioFinal {
                     + "\n4-Buscar pelicula."
                     + "\n0.-Salir.");
             opcion = Integer.parseInt(sc.nextLine());
-            if (opcion == 1) {
-                
-            }else if(opcion == 2){
-                
-            }else if(opcion == 3){
-                
-            }else if(opcion == 4){
-            
-            }else{
-                break;
+            switch (opcion) {
+                case 1:
+                    catalogo.iniciarArchivo();
+                    break;
+                case 2:
+                    System.out.println("Escriba el nombre de la pelicula:");
+                    String nombrePelicula = sc.nextLine();
+                    catalogo.agregarPelicula(nombrePelicula);
+                    break;
+                case 3:
+                    catalogo.listarPeliculas();
+                    break;
+                case 4:
+                    System.out.println("Nombre de la pelicula a buscar");
+                    String buscar = sc.nextLine();
+                    catalogo.buscarPelicula(buscar);
+                    break;
+                case 0:
+                    System.out.println("Hasta pronto");
+                    break;
+                default:
+                    System.out.println("Opcion no reconocida");
+                    break;
             }
         }
     }

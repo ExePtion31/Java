@@ -1,11 +1,14 @@
 package mx.com.gm.peliculas.negocio;
 
 public interface ICatalogoPeliculas {
-    void agregarPelicula(String nombreArchivo, String pelicula);
-    
-    void listarPeliculas(String nombreArchivo);
-    
-    void buscarPelicula(String nombreArchivo, String buscar);
-    
-    void iniciarArchivo(String nombreArchivo);
+
+    String NOMBRE_RECURSO = "Peliculas.txt";
+
+    void agregarPelicula(String pelicula);
+
+    void listarPeliculas();
+
+    void buscarPelicula(String buscar);
+
+    void iniciarArchivo();
 }
