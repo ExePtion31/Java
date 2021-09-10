@@ -1,0 +1,3 @@
+1010046823,Giovanni Baquero Vargas,Cll 33#39-39,3115132734,21,Desarrollador Junior,2021/09/09,giovancito113@gmail.com,1550000.0
+1010145872,Maria Paola Trujillo,Soacha - Compartir,31123849234,35,Analista,2021/09/09,maria@gmail.com,2550000.0
+79620771,Giovanni Baquero Arroyo,Cll 33 #39-39,3108248181,48,Taxista,2021/09/09,tonsy739@gmail.com,1300000.0
