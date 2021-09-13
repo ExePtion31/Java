@@ -1,6 +1,5 @@
 package com.uninpahu.tallerarchivos.negocio;
 
-import com.uninpahu.tallerarchivos.NominaBuscadores;
 import com.uninpahu.tallerarchivos.datos.*;
 import com.uninpahu.tallerarchivos.entity.*;
 import static com.uninpahu.tallerarchivos.negocio.IDatosPersona.NOMBRE_RECURSO;

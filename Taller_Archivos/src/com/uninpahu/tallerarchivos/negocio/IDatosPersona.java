@@ -1,7 +1,7 @@
 package com.uninpahu.tallerarchivos.negocio;
 
 public interface IDatosPersona {
-    String NOMBRE_RECURSO = "Personas.txt";
+    public static final String NOMBRE_RECURSO = "Personas.txt";
     
     void iniciarArchivo();
     

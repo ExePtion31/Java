@@ -1,7 +1,6 @@
 package com.bankvision.backend.controller;
 import com.bankvision.backend.entity.Producto;
-import com.bankvision.backend.request.Mensaje;
-import com.bankvision.backend.request.ProductoRequest;
+import com.bankvision.backend.request.*;
 import com.bankvision.backend.services.ProductoService;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
@@ -47,7 +46,6 @@ public class ProductoController {
         Producto producto = productoService.getByNombre(nombre).get();
         return new ResponseEntity<Producto>(producto, HttpStatus.OK);
     }
-    
     
     //Crear producto
     @PostMapping("/create")

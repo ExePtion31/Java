@@ -71,14 +71,12 @@ public class AccesoDatosImp implements IAccesoDatos {
             linea = entrada.readLine();
             while (linea != null) {
                 String[] datos = linea.split(",");
-                if (buscar != null && (buscar.equalsIgnoreCase(datos[0]) || buscar.equalsIgnoreCase(datos[1])
-                        || buscar.equalsIgnoreCase(datos[2]) || buscar.equalsIgnoreCase(datos[3])
-                        || buscar.equalsIgnoreCase(datos[4]) || buscar.equalsIgnoreCase(datos[5])
-                        || buscar.equalsIgnoreCase(datos[6]) || buscar.equalsIgnoreCase(datos[7])
-                        || buscar.equalsIgnoreCase(datos[8]))) {
-                    var persona = new Persona(Long.parseLong(datos[0]), datos[1], datos[2], Long.parseLong(datos[3]),
+                for (int i = 0; i < datos.length; i++) {
+                    if (buscar != null && buscar.equalsIgnoreCase(datos[i])){
+                        var persona = new Persona(Long.parseLong(datos[0]), datos[1], datos[2], Long.parseLong(datos[3]),
                             Integer.parseInt(datos[4]), datos[5], datos[6], datos[7], Double.parseDouble(datos[8]));
                     resultado.add(persona);
+                    }
                 }
                 linea = entrada.readLine();
             }

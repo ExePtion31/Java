@@ -15,7 +15,7 @@ public class TestManejoPersonas {
                 conexion.setAutoCommit(false);
             }
             
-            PersonaDAO personaDao = new PersonaDAO(conexion);
+            IPersonaDAO personaDao = new PersonaDAO(conexion);
             
             //Actualizar
             Persona persona = new Persona();

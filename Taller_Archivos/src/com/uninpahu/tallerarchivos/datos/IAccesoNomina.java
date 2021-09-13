@@ -1,6 +1,5 @@
 package com.uninpahu.tallerarchivos.datos;
 
-import com.uninpahu.tallerarchivos.NominaBuscadores;
 import com.uninpahu.tallerarchivos.entity.Nomina;
 import com.uninpahu.tallerarchivos.entity.Persona;
 import java.util.List;
