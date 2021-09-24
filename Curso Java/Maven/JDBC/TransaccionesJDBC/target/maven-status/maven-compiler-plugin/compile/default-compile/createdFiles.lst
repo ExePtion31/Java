@@ -1,0 +1,4 @@
+datos\ConexionDB.class
+entity\Persona.class
+datos\PersonaDAO.class
+test\TestManejoPersonas.class
