@@ -1,0 +1,3 @@
+1010046823,Giovanni Baquero,clcl 33 #39-39,3115132734,21,Desarrollador Junior,2021/09/24,gbaquerova@gmail.com,1550000.0
+39796904,Andrea Pachon,Cll 55 #30-33,3102934854,34,Analista,2021/09/24,andreap@gmail.com,1760000.0
+39796905,Julian Espinoza,Cll 23 #32-63,3152587899,25,Consultor,2021/09/23,juliane@gmail.com,1600000.0
